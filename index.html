@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Find Pokemon</title>
+    <style>
+     body {
+       margin: 0;
+       box-sizing: border-box;
+     }
+     main {
+       background: linear-gradient(rgba(246,249,46,.3), rgba(250,253,124,.3)), url(meda.jpg);
+       background-size: cover;
+       width: 100%;
+       min-height: 100vh;
+       background-attachment: fixed;
+
+     }
+     header {
+       background: linear-gradient(to left, gold, olive, chocolate);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     header a {
+       color: white;
+     }
+     header a:hover {
+       color: black;
+     }
+     .pretraga {
+       display: flex;
+       flex-wrap: wrap;
+       padding: 3% 1.6%;
+     }
+     input {
+       outline-width: inherit;
+       border: 1px solid black;
+       padding: 4px;
+     }
+     button {
+       padding: 4px;
+       outline-width: inherit;
+       border: 1px solid black;
+       letter-spacing: 0.03em;
+       background: black;
+       color: white;
+       width: 15%;
+       margin-left: 1%;
+     }
+     button:hover {
+       cursor: pointer;
+       opacity: 0.9;
+       background: white;
+       color: black;
+     }
+     button:active {
+       animation-name: efekat;
+       animation-duration: 500ms;
+       animation-fill-mode: forwards;
+     }
+     @keyframes efekat {
+       100% {
+         padding: 7px;
+       }
+     }
+
+     #ispis {
+       display: flex;
+       flex-direction: column;
+       padding-left: 1.6%;
+       padding-right: 1.6%;
+       padding-bottom: 4%;
+     }
+
+     footer {
+       background: linear-gradient(to left, gold, olive, chocolate);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     footer a {
+       color: white;
+     }
+     footer a:hover {
+       color: black;
+     }
+     footer .sajtovi {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+     }
+     a {
+       text-decoration: none;
+     }
+     .sajtovi p {
+       padding: 2px 5px;
+     }
+     @media (min-width: 600px){
+       header {
+         flex-direction: row;
+         padding-left: 45px;
+         padding-right: 45px;
+       }
+       header div {
+         display: flex;
+         width: 50%;
+       }
+       .pretraga {
+         flex-direction: column;
+         width: 50%;
+         padding-left: 45px;
+       }
+       input {
+         width: 30%;
+         padding: 6px;
+       }
+       button {
+         width: 18%;
+         margin-top: 2%;
+         margin-left: 0;
+       }
+       #ispis {
+         flex-direction: row;
+         flex-wrap: wrap;
+         width: 55%;
+       }
+       #ispis div {
+         margin-top: 2%;
+         margin-left: 10%;
+       }
+      .levo {
+        justify-content: flex-start;
+      }
+      .desno {
+        justify-content: flex-end;
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+       <div class="levo">
+<h2><a href="#" target="_blank">Dusan Randjelovic</a></h2>
+</div>
+       <div class="desno">
+          <h3>Pokemon API</h3>
+       </div>
+    </header>
+
+    <main>
+      <div class="pretraga">
+<h1>Find Your Favorite Pokemon</h1>
+<input id="polje">
+<button id="dugme">Find</button>
+</div>
+<div id="ispis">
+
+  </div>
+</main>
+
+  <footer>
+    <div>
+   <h2>Design By <a href="#" target="_blank">Dusan Randjelovic</a></h2>
+ </div>
+    <div class="sajtovi">
+      <p><a href="">Portfolio</a></p>
+      <p><a href="">Star Wars</a></p>
+      <p><a href="">Shop</a></p>
+      <p><a href="">Song Search</a></p>
+    </div>
+  </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
